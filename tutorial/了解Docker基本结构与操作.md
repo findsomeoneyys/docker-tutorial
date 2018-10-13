@@ -117,3 +117,23 @@ Successfully tagged flask-hello:latest
 使用别人的镜像并不复杂，这里以使用Docker hub的镜像为例，只需把run命令中`image`替换成`$DOCKER_ID_USER/image`即可。
 本次教程中制作的镜像已经推送上去,读者可以执行以下命令实验：
 `docker run -p 5000:5000 xxx008/flask-hello`
+
+## 简单流程图
+按照我们提到的知识点，我们刚刚的流程如下：
+```
++------------+  docker build   +--------------+  docker run -dt   +-----------+ 
+| Dockerfile | --------------> |    Image     | --------------->  | Container | 
++------------+                 +--------------+                   +-----------+ 
+                                 ^
+                                 | docker pull
+                                 |
+                               +--------------+
+                               |   Registry   |
+                               +--------------+
+```
+
+## 延伸阅读
+因为教程目的是为了让读者快速入门，所以尽量以通俗的方式来讲解必要的部分，有些概念并未提及，这里列出一些相关的知识点作为进阶的延伸阅读。
+
+- 官网对于container的介绍 https://www.docker.com/resources/what-container
+- 官网对镜像与容器结构的详解 https://docs.docker.com/storage/storagedriver/

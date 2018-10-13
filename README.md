@@ -1,5 +1,5 @@
 # docker-tutorial
-此教程目的是让读者能了解Docker基本结构概念与常用操作，最后以部署Django uwsgi nginx应用作为练习，展示一个Docker项目的基本构建流程。
+此教程目的是让读者能了解Docker基本结构概念与常用操作，最后以部署Django uwsgi nginx应用作为练习，展示一个Docker项目的基本构建流程。
 
 
 ## 写在开头
@@ -13,7 +13,9 @@ Docker是伴随着[DevOps](https://zh.wikipedia.org/wiki/DevOps)等相关概念�
 相信阅读过后对Docker会有初步了解。
 
 ## 前置条件
-读者需要自行根据[官方安装文档](https://docs.docker.com/install/)自行安装Docker和Docker compose
+
+读者需要自行根据[官方安装文档](https://docs.docker.com/install/)自行安装Docker和Docker compose
+
 教程中使用的Docker版本为18.06.1-ce
 
 ## 教程

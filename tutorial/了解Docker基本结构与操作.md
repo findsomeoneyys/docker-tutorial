@@ -21,7 +21,7 @@
 仓库有官方的[Docker Hub](https://hub.docker.com/),也有自己或者别人搭建的私有仓库。
 
 
-## 镜像创建与执行
+## 镜像创建和执行
 镜像创建有两种方式，一个是刚刚提到过的通过**Dockferfile**创建，另外还有一种方式是通过对容器的commit，把该容器转化成一个镜像，但是官方并不提倡使用这个方式。这里着重介绍较为常用的**Dockferfile**，构建一个简单的flask-app。相关代码可以在code目录中获取。
 
 首先准备`requirements.txt`和`app.py`
@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
 接着创建一个Dockerfile：
 ```
-# 每个Dockerfile必须以一个FROM开头，后面跟着一个镜像名
+# 每个Dockerfile必须以一个FROM开头，后面跟着一个镜像名
 # 镜像是叠加的，比如这段代码中使用的以stretch版本的debain作为基础，再装入python 3.6.6的镜像
 FROM python:3.6.6-stretch
 

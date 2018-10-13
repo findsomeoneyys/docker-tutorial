@@ -12,10 +12,14 @@ Docker是伴随着[DevOps](https://zh.wikipedia.org/wiki/DevOps)等相关概念�
 
 相信阅读过后对Docker会有初步了解。
 
+## 前置条件
+读者需要自行根据[官方安装文档](https://docs.docker.com/install/)自行安装Docker和Docker compose
+教程中使用的Docker版本为18.06.1-ce
+
 ## 教程
 这篇教程分成以下三部分，读者可以根据需要自行选读。
 
-- 了解Docker基本结构与操作
-- Docker运行时参数讲解与docker-compose
-- Docker实战-Django uwsgi nginx
+- [了解Docker基本结构与操作](./tutorial/了解Docker基本结构与操作.md)
+- [Docker运行时参数讲解与docker-compose](./tutorial/Docker运行时参数讲解与docker-compose.md)
+- [Docker实战-Django uwsgi nginx](./tutorial/Docker实战-Django-uwsgi-nginx.md)
 
